@@ -1,7 +1,9 @@
 # buche
 
 ## install
-```
-pipx install dist/*.whl
 
+```sh
+git clone ...
+uv build
+pipx install dist/*.whl
 ```

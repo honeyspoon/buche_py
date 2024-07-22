@@ -1,17 +1,14 @@
-[tool.poetry]
-name = "buche"
+[project]
+name = "buche-py"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "pretty print of open telemetry json"
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["rich>=13.8.1", "colorama>=0.4.6"]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-colorama = "^0.4.6"
-
-[tool.poetry.scripts]
-buche = "buche.main:main"
+[project.scripts]
+buche = "buche_py.main:main"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
